@@ -17,44 +17,9 @@ LETTER SPACING
 FONT FAMILY 
 Poppins
 
----------- COLORS ----------
-PRIMARY
-
-Base: #339af0
-Tint: #d0ebff
-Shade: #1c7ed6
-
-SECONDARY
-
-Base: #9775fa
-Tint: #e5dbff
-Shade: #7048e8
-
-TERTIARY
-
-Base: #ff922b
-Tint: #ffe8cc
-Shade: #f76707
-
-GREY
-
-Base: #495057
-Tint: f1f3f5
-Shade: #212529
-
-
-
----------- BORDER RADIUS ----------
-
- 4px / 8px / 20px
-
 ---------- BORDER RADIUS ----------
 
 5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px /  70px / 80px / 90px / 100px / 125px 
-
-
-
-
 
 */
 
@@ -96,71 +61,136 @@ Shade: #212529
     --font-family: 'Poppins', sans-serif;
 
     /* COLORS */
-    --primary-base: #ccc5b9;
-    --primary-tint: #403d39;
-    --primary-shade: #252422;
+    --primary-base: #37475a;
+    --primary-tint: #566a83;
+    --primary-shade: #232f3e;
 
-    --secondary-base: #eb5e28;
-    --secondary-tint: #00FFFF;
-    --secondary-shade: #6157E1;
+    --secondary-base: #48a3c6;
+    --secondary-tint: #85d9fa;
+    --secondary-shade: #007eb9;
 
-    --tertiary-base: #374854;
-    --tertiary-tint: #ffe8cc;
-    --tertiary-shade: #D9E4E0;
+    --tertiary-base: #ad5a06;
+    --tertiary-tint: #f5a657;
+    --tertiary-shade: #e47911;
 
     --grey-base: #495057;
-    --grey-tint:  #fdfdfd;
+    --grey-tint:  #cccccc;
     --grey-shade: #212529;
 
     --white: #FFF;
     --black: #000;
 }
 body {
-    background-color: var(--primary-shade);
+    background-color: var(--grey-tint);
     color: white;
 }
 
 /* GLOBAL */
-.container {
-    max-width: 1600px;
-    margin: 0 auto;
-    width: 90%;
-    position: relative;
-   
-}
+
 h1,h2,h3,h4,h5 {
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-tight);
+}
+
+
+
+
+/* -------- TOP NAVBAR ------- */
+
+.top-navbar-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 8rem;
+    background: var(--primary-shade);
+}
+.amazon-logo {
+    max-width: 130px;
+    width: 100%;
+}
+.location-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1.5rem;
+}
+.location-div img{
+    max-width: 20px;
+    width: 100%;
+}
+.location-div p {
+    font-size: 1.6rem;
     letter-spacing: var(--letter-spacing-tight);
-    color: var(--secondary-base);
+    color: var(--grey-tint);
 }
-h1 {
-    font-size: 4rem;
-}
-h2 {
-    font-size: 3.2rem;
-}
-h3 {
-    font-size: 2.4rem;
-}
-h4 {
-    font-size: 2rem;
-}
-h5 {
+.location-div h1 {
+    color: var(--white);
     font-size: 1.6rem;
 }
-p {
-    font-size: 2rem;
+
+.top-navbar-2 {
+    flex: 1; /* --to all the space available */
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    background: var(--white);
+    border-radius: 1rem;
 }
-a {
-    text-decoration: none;
+.all-drop {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 2rem;
+    background: var(--grey-base);
+    border-radius: .5rem 0 0 .5rem;
+}
+.all-drop p {
     font-size: 1.6rem;
-    display: inline-block;
+    font-weight: var(--font-weight-bold);
+}
+.nav-search-input {
+    border: none; /*To hide the input border*/
+    outline: none;
+    padding: 0 2rem;
+    width: 100%;
+}
+.nav-search-icon {
+    max-width: 43.5px;
+    width: 100%;
+    background: var(--tertiary-shade);
+    padding: .8rem;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.top-navbar-3 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 1.5rem;
+}
+.langugae-selection {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: var(--font-weight-bold);
+}
+.nav-sign-in {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.sign-in h1 {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+.return-orders h1 {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+.nav-cart {
+    max-width: 40px;
+    width: 100%;
     cursor: pointer;
-}
-li {
-    list-style: none;
-}
-span{
-    display: inline-block;
 }

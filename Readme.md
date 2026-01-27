@@ -35,7 +35,7 @@ This project is created for educational purposes only. It is not affiliated with
 
 
 1. Clone the repository:
-git clone https://github.com/your-username/amazon-clone.git
+git clone https://github.com/Magilo-Ayuen/Amazon-Clone.git
 
 
 
@@ -99,5 +99,3 @@ This project is UI only.
 
 # 📝 License
 This project is for educational and practice purposes only.
-
-
