@@ -1,0 +1,166 @@
+/* 
+---------- TYPOGRAPHY ---------
+
+FONT SIZES
+
+12px / 16px / 20px / 24px / 32px / 40px / 48px /62px
+
+FONT WEIGHTS
+400 / 700
+
+LINE HEIGHTS
+1.2 / 1.5
+
+LETTER SPACING
+0 / -2px
+
+FONT FAMILY 
+Poppins
+
+---------- COLORS ----------
+PRIMARY
+
+Base: #339af0
+Tint: #d0ebff
+Shade: #1c7ed6
+
+SECONDARY
+
+Base: #9775fa
+Tint: #e5dbff
+Shade: #7048e8
+
+TERTIARY
+
+Base: #ff922b
+Tint: #ffe8cc
+Shade: #f76707
+
+GREY
+
+Base: #495057
+Tint: f1f3f5
+Shade: #212529
+
+
+
+---------- BORDER RADIUS ----------
+
+ 4px / 8px / 20px
+
+---------- BORDER RADIUS ----------
+
+5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px /  70px / 80px / 90px / 100px / 125px 
+
+
+
+
+
+*/
+
+
+
+/* --------- GLOBAL STYLES --------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+:root {
+    /* FONT SIZES */
+    font-size: 62.5%;
+    /* update to rems */
+    --text-sm: 1.2rem;
+    --text-base: 1.6rem;
+    --text-paragraph: 2rem;
+    --text-h5: 2.4rem;
+    --text-h4: 3.2rem;
+    --text-h3: 4rem;
+    --text-h2: 4.8rem;
+    --text-h1: 6.2rem;
+
+    /* FONT WEIGHTS */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* LINE HEIGHTS */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+
+    /* LETTER SPACING */
+
+    --letter-spacing-tight: .5px;
+
+    /* FONT FAMILY */
+    --font-family: 'Poppins', sans-serif;
+
+    /* COLORS */
+    --primary-base: #ccc5b9;
+    --primary-tint: #403d39;
+    --primary-shade: #252422;
+
+    --secondary-base: #eb5e28;
+    --secondary-tint: #00FFFF;
+    --secondary-shade: #6157E1;
+
+    --tertiary-base: #374854;
+    --tertiary-tint: #ffe8cc;
+    --tertiary-shade: #D9E4E0;
+
+    --grey-base: #495057;
+    --grey-tint:  #fdfdfd;
+    --grey-shade: #212529;
+
+    --white: #FFF;
+    --black: #000;
+}
+body {
+    background-color: var(--primary-shade);
+    color: white;
+}
+
+/* GLOBAL */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+   
+}
+h1,h2,h3,h4,h5 {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    color: var(--secondary-base);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.6rem;
+}
+p {
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+span{
+    display: inline-block;
+}
