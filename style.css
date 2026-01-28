@@ -87,6 +87,12 @@ body {
 
 /* GLOBAL */
 
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+    cursor: pointer;
+}
 h1,h2,h3,h4,h5 {
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-tight);
@@ -190,7 +196,74 @@ h1,h2,h3,h4,h5 {
     color: var(--white);
 }
 .nav-cart {
+    display: flex;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+.nav-cart img{
     max-width: 40px;
     width: 100%;
+}
+.nav-cart h4 {
+    text-decoration: none;
+    color: var(--white);
+    align-self: flex-end;
+}
+
+/* -------- TOP-NAVIGATION-BAR-BOTTOM ------- */
+
+.top-navbar-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: var(--primary-base);
+    height: 4rem;
+}
+.all-menu {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.all-menu img {
+    max-width: 30px;
+    width: 100%;
+}
+.all-menu h4 {
+    font-size: 1.2rem;
+}
+.top-navbar-bottom p {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+/* ------- TOP SLIDER --------- */
+.top-slider {
+
+}
+.top-slider a {
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    padding: 2.5rem 1rem;
+    background: var(--white);
+    color: var(--primary-tint);
+    font-size: 2rem;
     cursor: pointer;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+}
+.next {
+    right: 0;
+}
+.top-slider ul {
+    display: flex;
+    /* gap: 20rem; */
+    overflow-y: hidden;
+}
+.top-slider-img {
+    max-width: 100%;
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent ); /*to create a fade-out in an image*/
 }
