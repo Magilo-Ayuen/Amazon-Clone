@@ -82,7 +82,7 @@ Poppins
 }
 body {
     background-color: var(--grey-tint);
-    color: white;
+    color: var(--white);
 }
 
 /* GLOBAL */
@@ -137,7 +137,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .top-navbar-2 {
-    flex: 1; /* --to all the space available */
+    flex: 1; /* --to use all the space available */
     display: flex;
     align-items: center;
     max-width: 1200px;
@@ -268,4 +268,77 @@ h1,h2,h3,h4,h5 {
 .top-slider-img {
     max-width: 100%;
     -webkit-mask-image: linear-gradient(to bottom, black, transparent ); /*to create a fade-out in an image*/
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero-section {
+    width: 84%;
+    height: 950px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 50rem;
+}
+.main-home-essentials {
+    width: 38rem;
+    height: 45rem;
+    background: var(--white);
+    padding: 1.5rem;
+} 
+.hero-h2s{
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+.param-links {
+    color: var(--secondary-shade);
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+    letter-spacing: var(--letter-spacing-tight);
+}
+.param-links:hover {
+    color: var(--grey-base);
+}
+.home-essentials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* place-items: center; */
+    gap: 1.5rem;
+    background: var(--white);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.home-essentials p {
+    color: var(--grey-shade);
+    font-size: 1.2rem;
+}
+.home-essentials-item-1 img,
+.home-essentials-item-2 img,
+.home-essentials-item-3 img,
+.home-essentials-item-4 img{
+    max-width: 160px;
+}
+
+/* ------- SHOP GAMING ----- */
+.games-shop {
+    width: 38rem;
+    height: 45rem;
+    background: var(--white);
+    padding: 1.5rem;
+   
+}
+.games-shop img {
+    max-width: 350px; /*forcing the img size to fit in the container - set one either height or width { NOT BOTH }*/
+    height: 300px;
+    margin-bottom: 3.5rem;
+}
+.games-shop h2, 
+.games-shop p {
+    margin-left: 0;
 }
