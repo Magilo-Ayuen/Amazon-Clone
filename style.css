@@ -279,21 +279,23 @@ h1,h2,h3,h4,h5 {
 
 /* ---------- HERO SECTION ---------- */
 .hero-section {
-    width: 84%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
-    position: relative;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
+    width: 84%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+.hero-header {
+    margin-top: -25vw;
 }
 .main-home-essentials {
     width: 38rem;
     height: 45rem;
     background: var(--white);
     padding: 1.5rem;
+    z-index: 1;
 } 
 .hero-h2s{
     color: var(--black);
@@ -337,6 +339,7 @@ h1,h2,h3,h4,h5 {
     height: 45rem;
     background: var(--white);
     padding: 1.5rem;
+    z-index: 1;
 }
 .games-shop img {
     max-width: 350px; /*forcing the img size to fit in the container - set one either height or width { NOT BOTH }*/
