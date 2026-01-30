@@ -263,7 +263,6 @@ h1,h2,h3,h4,h5 {
     cursor: pointer;
     font-weight: 900;
     text-decoration: none;
-    cursor: pointer;
 }
 .next {
     right: 0;
@@ -371,20 +370,16 @@ h1,h2,h3,h4,h5 {
 .control-buttons {
     position: absolute;
     top: 35%;
-    z-index: 1;
     padding: 2.5rem 1rem;
     background: var(--grey-base);
     color: var(--primary-tint);
     font-size: 2rem;
     cursor: pointer;
-    /* font-weight: 900; */
-    text-decoration: none;
-    cursor: pointer;
 }
 .control-buttons a {
     filter: brightness(0) invert(1);
 }
-.control-buttons .next {
+.next_btn {
     right: 0;
 }
 .top-sellers ul {
@@ -396,4 +391,131 @@ h1,h2,h3,h4,h5 {
 }
 .top-sellers ul img {
     max-width: 130px;
+}
+
+
+
+
+
+
+/* ---------- FOOTER --------------- */
+.footer h2{
+    color: var(--white);
+    font-size: 2.4rem;
+}
+.top-footer {
+    background: var(--primary-tint);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-footer:hover {
+    background: var(--grey-base);
+}
+.top-footer a {
+    color: var(--white);
+    font-size: 2rem;
+}
+.middle-footer-wrapper {
+    background: var(--primary-shade);
+}
+
+.middle-footer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 45rem;
+    gap: 10rem;
+}
+.middle-footer h2 {
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+}
+.middle-footer a {
+    color: var(--grey-tint);
+    font-size: 1.6rem;
+    letter-spacing: var(--letter-spacing-tight);
+}
+.middle-footer a::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: var(--white);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    margin-top: .3rem;
+}
+.middle-footer a:hover::after {
+    width: 100%;
+}
+.get-to-know-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+.amazon-make-money {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.amazon-payments {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.let-us-help {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.footer-divider {
+    border: none;
+    height: .5px;
+    background-color: var(--grey-tint);
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.no-mans-land {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo {
+    max-width: 100px;
+    margin-right: 5rem;
+}
+
+.no-mans-land-3 {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.world-language {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.world-language img {
+    filter: brightness(0) invert(1);
+}
+
+.currency-denomination {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.currency-denomination h2 {
+    font-size: 1.2rem;
+}
+
+.flag-country {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
