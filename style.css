@@ -61,9 +61,9 @@ Poppins
     --font-family: 'Poppins', sans-serif;
 
     /* COLORS */
-    --primary-base: #37475a;
-    --primary-tint: #566a83;
-    --primary-shade: #232f3e;
+    --primary-base: #1c2c41;
+    --primary-tint: #2c3e55;
+    --primary-shade: #0f1924;
 
     --secondary-base: #48a3c6;
     --secondary-tint: #85d9fa;
@@ -412,14 +412,15 @@ h1,h2,h3,h4,h5 {
     align-items: center;
 }
 .top-footer:hover {
-    background: var(--grey-base);
+    background: var(--primary-shade);
 }
 .top-footer a {
     color: var(--white);
     font-size: 2rem;
 }
 .middle-footer-wrapper {
-    background: var(--primary-shade);
+    background: var(--primary-base);
+    padding-bottom: 4rem;
 }
 
 .middle-footer {
@@ -475,7 +476,7 @@ h1,h2,h3,h4,h5 {
 .footer-divider {
     border: none;
     height: .5px;
-    background-color: var(--grey-tint);
+    background-color: var(--grey-base);
     width: 100%;
     margin: 3rem auto;
 }
@@ -499,6 +500,8 @@ h1,h2,h3,h4,h5 {
     display: flex;
     align-items: center;
     gap: 1rem;
+    border: 1px solid var(--white);
+    padding: .6rem 1.2rem;
 }
 
 .world-language img {
@@ -509,6 +512,8 @@ h1,h2,h3,h4,h5 {
     display: flex;
     align-items: center;
     gap: 1rem;
+    border: 1px solid var(--white);
+    padding: .6rem 1.2rem;
 }
 .currency-denomination h2 {
     font-size: 1.2rem;
@@ -518,4 +523,65 @@ h1,h2,h3,h4,h5 {
     display: flex;
     align-items: center;
     gap: 1rem;
+    border: 1px solid var(--white);
+    padding: .6rem 1.2rem;
+}
+
+
+/* ----- FOOTER BOTTOM -------- */
+
+.footer-bottom-wrapper {
+    display: flex;
+    justify-content: center;
+    background: var(--primary-shade);
+    height: 38rem;
+    gap: 6rem;
+    padding-top: 5rem;
+}
+.footer-bottom-wrapper h3 {
+    font-weight: 600;
+    margin-bottom: .2rem;
+}
+.footer-bottom-wrapper p {
+    color: var(--grey-tint);
+    gap: .2rem;
+}
+
+.footer-bottom-1,
+.footer-bottom-2,
+.footer-bottom-3,
+.footer-bottom-4,
+.footer-bottom-5,
+.footer-bottom-6,
+.footer-bottom-7 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* -------- COPYRIGHT MESSAGE --------- */
+/* This should have been in the wrapper WITH FOOTER-BOTTOM-{N} but AS PER NOW {MY EYES ARE} - I WILL HANDLE THIS MANUALLY */
+
+.copyright-wrapper {
+    background: var(--primary-shade);
+}
+.footer-last-copyright {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.footer-last-copyright a {
+    color: var(--white);
+    letter-spacing: var(--letter-spacing-tight);
+}
+.copy-right-2026 {
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    padding-bottom: 5rem;
+}
+.copy-right-2026 p {
+    font-size: 1.2rem;
+    letter-spacing: var(--letter-spacing-tight);
 }
